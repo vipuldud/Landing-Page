@@ -1,0 +1,254 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body and background */
+body {
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(45deg, #4a90e2, #0052cc);
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Banner Section */
+.banner {
+  background-color: blue;
+
+  position: relative;
+  text-align: center;
+}
+
+.banner-content {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  opacity: 0.8;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: slideIn 2s ease-in-out;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.banner-btn {
+  padding: 10px 20px;
+  background-color: #f09c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(50px); }
+  to { transform: translateY(0); }
+}
+
+/* About Us Section */
+.about {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #4a90e2;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Products Section */
+.products {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  color: #4a90e2;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: white;
+  width: 280px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  color: #333;
+  margin: 15px 0;
+}
+
+.product-card p {
+  color: #777;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Us Section */
+.contact {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #4a90e2;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact button {
+  padding: 15px 30px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Styles for Product Buttons */
+.card-buttons {
+  margin-top: 15px;
+}
+
+.card-buttons button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-buttons button:hover {
+  background-color: lightgreen;
+}
